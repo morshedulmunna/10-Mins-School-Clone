@@ -20,10 +20,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="login_area">
-            <div className="langus">
+            <div className="dropdown">
               <span id="langu">English</span>
               <BiCaretDown />
-              <div className="options">
+              <div className="dropdown-content">
                 <span>বাংলা</span>
                 <span>English</span>
               </div>
