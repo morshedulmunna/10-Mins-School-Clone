@@ -1,4 +1,5 @@
 import "./Navbar.scss";
+import { BiArrowFromLeft, BiCaretDown } from "react-icons/bi";
 
 const Navbar = () => {
   return (
@@ -13,14 +14,23 @@ const Navbar = () => {
             <ul>
               <span>Class 1-12</span>
               <span>Admission</span>
-              <span>Admission</span>
-              <span>Admission</span>
-              <span>Admission</span>
+              <span>Get Job-Ready</span>
+              <span>Courses</span>
+              <span>Book Store</span>
             </ul>
           </div>
-          <div>
-            <span>English</span>
-            <div>
+          <div className="login_area">
+            <div className="langus">
+              <span id="langu">English</span>
+              <BiCaretDown />
+              <div className="options">
+                <span>বাংলা</span>
+                <span>English</span>
+              </div>
+            </div>
+
+            <div className="login-Btn">
+              <BiArrowFromLeft />
               <span>Log in</span>
             </div>
           </div>

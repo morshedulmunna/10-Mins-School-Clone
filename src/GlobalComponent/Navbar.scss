@@ -1,6 +1,10 @@
 nav {
-  background-color: aquamarine;
-  padding-top: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 12px 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
   .nav {
     display: flex;
     align-items: center;
@@ -9,11 +13,66 @@ nav {
       display: flex;
       align-items: center;
       img {
-        height: 30px;
+        height: 32px;
+        cursor: pointer;
       }
       ul {
         span {
-          margin-left: 30px;
+          margin-left: 20px;
+          padding: 0.5rem 0.8rem;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 18px;
+          &:hover {
+            background: var(--pink);
+            transition: ease 0.3s;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .login_area {
+      display: flex;
+      align-items: center;
+      .login-Btn {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        background-color: #3f3f3f;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        border: 1px solid #3f3f3f;
+        cursor: pointer;
+
+        &:hover {
+          background: none;
+          color: black;
+          transition: ease 0.3s;
+        }
+      }
+      .langus {
+        .options {
+          display: none;
+          background-color: #fff;
+          border-radius: 5px;
+        }
+        &:hover {
+          .options {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50px;
+            span {
+              cursor: pointer;
+              padding: 10px;
+            }
+          }
+          #langu {
+            color: var(--pink);
+            cursor: pointer;
+          }
         }
       }
     }
