@@ -1,0 +1,53 @@
+.Header {
+  background-color: var(--background);
+  width: 100%;
+  height: 73vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+    grid-gap: 20px;
+    .text-area {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+      h1 {
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 1.25 !important;
+        margin-bottom: 20px;
+      }
+      p {
+        line-height: 1.25 !important;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+      }
+
+      .learningItem {
+        width: 50%;
+        padding: 0.5rem 0rem;
+        background-color: aqua;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        select {
+          padding: 0.8rem 0rem;
+        }
+      }
+    }
+    .img-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 500px;
+      }
+    }
+  }
+}
